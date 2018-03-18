@@ -43,9 +43,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  //
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  var totalCost = total();
+  cart = [];
+  return `Your total cost is $${totalCost}, which will be charged to the card ${cardNumber}.`;
 }
