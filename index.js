@@ -43,11 +43,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  //if item is present
+  if (/*item is present*/) {
     //remove item
-    //return cart
-  //else
-    //return 
+    return cart;    
+  }
+  else {
+    return `That item is not in your cart.`;
+  }
 }
 
 function placeOrder(cardNumber) {
