@@ -27,11 +27,10 @@ function viewCart() {
     if (i < cart.length - 1){
       cartString += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
     } else {
-      cartString += 
+      cartString += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
     return cartString;
   }
-  
 }
  
 
