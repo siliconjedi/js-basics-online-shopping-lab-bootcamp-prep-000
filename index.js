@@ -22,11 +22,18 @@ function viewCart() {
   } else if (cart.length === 1){
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   } else {
-    return "";
+    var cartString = "In your cart, you have";
+    for (let i = 0; i < cart.length; i++)
+    if (i < cart.length - 1){
+      cartString += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
+    } else {
+      cartString += 
+    }
+    return cartString;
   }
   
 }
-//    var cartString = "In your cart, you have";
+ 
 
 function total() {
   // write your code here
