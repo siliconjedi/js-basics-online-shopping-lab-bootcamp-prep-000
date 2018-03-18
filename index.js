@@ -43,7 +43,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  //
+  //if item is present
+    //remove item
+    //return cart
+  //else
+    //return 
 }
 
 function placeOrder(cardNumber) {
