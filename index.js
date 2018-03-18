@@ -43,13 +43,24 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (/*item is present*/) {
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === item){
+      //remove from cart
+      return cart;
+    } else {
+      if (i = cart.length -  1){
+        return  `That item is not in your cart.`;
+      }
+    }
+  }
+/*
+  if (item is present) {
     //remove item
-    return cart;    
+  return cart;    
   }
   else {
     return `That item is not in your cart.`;
-  }
+  }*/
 }
 
 function placeOrder(cardNumber) {
